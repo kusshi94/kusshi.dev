@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>kusshiのページ</title>
     <style>
         ul {
@@ -10,6 +11,17 @@
         }
         li {
             margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 18px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -58,7 +70,7 @@
 
     <h1>このページへのリンク</h1>
     <!-- QRコード -->
-    <img src="./qr.png" alt="https://kusshi.dev/" width="200" height="200">
+    <img src="./qr.png" alt="https://kusshi.dev/">
 
 </body>
 
