@@ -1,0 +1,17 @@
+ul {
+    list-style-type: none;
+}
+li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
