@@ -1,10 +1,45 @@
-ul {
-    list-style-type: none;
-}
-li {
-    margin-bottom: 10px;
+ul /* グローバルスタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* タイトルとサブタイトル */
+h1 {
+    border-bottom: 2px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #444;
+}
+
+/* レスポンシブデザインの調整 */
 @media (max-width: 600px) {
     body {
         font-size: 18px;
@@ -14,4 +49,18 @@ li {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto 10px; /* 画像を中央揃えにし、下部にマージンを追加 */
+}
+
+/* 中央揃え */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー */
+header {
+    margin-bottom: 20px;
 }
