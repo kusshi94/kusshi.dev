@@ -6,6 +6,7 @@ on:
       - "main"
     paths:
       - "src/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -36,6 +37,10 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Add Old Pages
+        run: |
+          mkdir ./build/old
+          cp ./web/* ./build/old
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
