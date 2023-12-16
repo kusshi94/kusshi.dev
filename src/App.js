@@ -13,7 +13,7 @@ function PaperContent() {
       {papers.map((paper, index) => (
         <div key={index} className="card mb-3">
           <div className="card-body">
-            <h5 className="card-title">{paper.title} {paper.award && <strong><span style={{ color: "red" }}>({paper.award})</span></strong>}</h5>
+            <h5 className="card-title">{paper.title} {paper.award && <span style={{ color: "red" }}>({paper.award})</span>}</h5>
             <p className="card-text">
               {paper.authors.join(", ")}
             </p>
@@ -77,9 +77,8 @@ function HackathonContent() {
       {hackathons.map((hackathon, index) => (
         <div key={index} className="card mb-3">
           <div className="card-body">
-            <h5 className="card-title">{hackathon.event} - {hackathon.product}</h5>
+            <h5 className="card-title">{hackathon.event} - {hackathon.product} {hackathon.award && <span style={{ color: "red" }}>({hackathon.award})</span>}</h5>
             <p className="card-text">
-              {hackathon.award && <strong><span style={{ color: "red" }}>{hackathon.award}</span></strong>}
             </p>
             <a href={hackathon.blogLink} className="card-link" target="_blank" rel="noreferrer">{hackathon.blogTitle}</a>
           </div>
