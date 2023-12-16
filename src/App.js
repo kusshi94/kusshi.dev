@@ -21,8 +21,8 @@ function PaperContent() {
               {paper.event}
               {paper.award && <strong><span style={{ color: "red" }}>({paper.award})</span></strong>}
             </p>
-            <a href={paper.link} className="card-link">{paper.linkTitle}</a>
-            <a href={paper.blogLink} className="card-link">{paper.blogTitle}</a>
+            <a href={paper.link} className="card-link" target="_blank" rel="noreferrer">{paper.linkTitle}</a>
+            <a href={paper.blogLink} className="card-link" target="_blank" rel="noreferrer">{paper.blogTitle}</a>
           </div>
         </div>
       ))}
@@ -42,7 +42,7 @@ function CarrerContent() {
             {career.link && (
               <>
                 <span>関連リンク：</span>
-                <a href={career.link} className="card-link">{career.link_title}</a>
+                <a href={career.link} className="card-link" target="_blank" rel="noreferrer">{career.link_title}</a>
               </>
             )}
           </div>
@@ -64,7 +64,7 @@ function VulnerabilityContent() {
                 <span key={index} className="badge bg-secondary mx-1">{cve}</span>
               ))}
             </p>
-            <a href={vulnerability.link} className="card-link">{vulnerability.linkTitle}</a>
+            <a href={vulnerability.link} className="card-link" target="_blank" rel="noreferrer">{vulnerability.linkTitle}</a>
           </div>
         </div>
       ))}
@@ -82,7 +82,7 @@ function HackathonContent() {
             <p className="card-text">
               {hackathon.award && <strong><span style={{ color: "red" }}>{hackathon.award}</span></strong>}
             </p>
-            <a href={hackathon.blogLink} className="card-link">{hackathon.blogTitle}</a>
+            <a href={hackathon.blogLink} className="card-link" target="_blank" rel="noreferrer">{hackathon.blogTitle}</a>
           </div>
         </div>
       ))}
@@ -102,19 +102,19 @@ function App() {
             <p className="card-text">所属：横浜国立大学大学院 環境情報学府</p>
             <p className="card-text">サイバーセキュリティとITインフラに興味がある大学院生です</p>
             <div className="d-flex justify-content-center social-links">
-              <a href="https://twitter.com/kusshi94" className="btn btn-primary mx-2 btn-custom">
+              <a href="https://twitter.com/kusshi94" className="btn btn-primary mx-2 btn-custom" target="_blank" rel="noreferrer">
                 <i className="fab fa-twitter"></i> Twitter
               </a>
-              <a href="https://github.com/kusshi94" className="btn btn-secondary mx-2 btn-custom">
+              <a href="https://github.com/kusshi94" className="btn btn-secondary mx-2 btn-custom" target="_blank" rel="noreferrer">
                 <i className="fab fa-github"></i> GitHub
               </a>
-              <a href="https://qiita.com/kusshi" className="btn btn-success mx-2 btn-custom">
+              <a href="https://qiita.com/kusshi" className="btn btn-success mx-2 btn-custom" target="_blank" rel="noreferrer">
                 <i className="fab fa-q"></i> Qiita
               </a>
-              <a href="https://kusshi.hatenablog.jp/" className="btn btn-info mx-2 btn-custom">
+              <a href="https://kusshi.hatenablog.jp/" className="btn btn-info mx-2 btn-custom" target="_blank" rel="noreferrer">
                 <i className='fas fa-blog'></i> Blog
               </a>
-              <a href="https://speakerdeck.com/kusshi94" className="btn btn-warning mx-2 btn-custom">
+              <a href="https://speakerdeck.com/kusshi94" className="btn btn-warning mx-2 btn-custom" target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-speaker-deck"></i> SpeakerDeck
               </a>
             </div>
