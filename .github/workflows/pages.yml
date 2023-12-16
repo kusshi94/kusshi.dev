@@ -40,7 +40,7 @@ jobs:
       - name: Add Old Pages
         run: |
           mkdir ./build/old
-          cp ./web/* ./build/old
+          cp -r ./web/* ./build/old
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
