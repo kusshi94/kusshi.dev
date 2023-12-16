@@ -63,7 +63,7 @@ function VulnerabilityContent() {
                 <span key={index} className="badge bg-secondary mx-1">{cve}</span>
               ))}
             </p>
-            <a href={vulnerability.link} className="card-link" target="_blank" rel="noreferrer">{vulnerability.linkTitle}</a>
+            関連リンク：<a href={vulnerability.link} className="card-link" target="_blank" rel="noreferrer">{vulnerability.linkTitle}</a>
           </div>
         </div>
       ))}
@@ -80,7 +80,7 @@ function HackathonContent() {
             <h5 className="card-title">{hackathon.event} - {hackathon.product} {hackathon.award && <span style={{ color: "red" }}>({hackathon.award})</span>}</h5>
             <p className="card-text">
             </p>
-            <a href={hackathon.blogLink} className="card-link" target="_blank" rel="noreferrer">{hackathon.blogTitle}</a>
+            関連リンク：<a href={hackathon.blogLink} className="card-link" target="_blank" rel="noreferrer">{hackathon.blogTitle}</a>
           </div>
         </div>
       ))}
