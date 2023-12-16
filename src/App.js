@@ -13,13 +13,12 @@ function PaperContent() {
       {papers.map((paper, index) => (
         <div key={index} className="card mb-3">
           <div className="card-body">
-            <h5 className="card-title">{paper.title}</h5>
+            <h5 className="card-title">{paper.title} {paper.award && <strong><span style={{ color: "red" }}>({paper.award})</span></strong>}</h5>
             <p className="card-text">
               {paper.authors.join(", ")}
             </p>
             <p className="card-text">
               {paper.event}
-              {paper.award && <strong><span style={{ color: "red" }}>({paper.award})</span></strong>}
             </p>
             <a href={paper.link} className="card-link" target="_blank" rel="noreferrer">{paper.linkTitle}</a>
             <a href={paper.blogLink} className="card-link" target="_blank" rel="noreferrer">{paper.blogTitle}</a>
