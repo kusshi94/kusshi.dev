@@ -7,10 +7,18 @@
     "link_title": ""
   },
   {
+    "duration": "2023年12月〜2024年2月",
+    "company": "株式会社MIXI",
+    "style": "Dive into MIXI 2023-2024",
+    "position": "Site Reliability Engineer",
+    "link_title": "",
+    "link": ""
+  },
+  {
     "duration": "2023年10月～2023年12月",
     "company": "株式会社リクルート",
     "style": "RECRUIT Internship for Engineers, Data Specialists 2023",
-    "position": "SRE",
+    "position": "Site Reliability Engineer",
     "link_title": "Trivyによるクラウドインフラ設定のセキュリティ検査【インターン参加記】 – PSYENCE:MEDIA",
     "link": "https://blog.recruit.co.jp/rmp/infrastructure/post-22588/"
   },

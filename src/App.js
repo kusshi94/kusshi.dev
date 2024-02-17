@@ -98,7 +98,7 @@ function App() {
           <div className="card-body">
             <h1 className="card-title">櫛引 淳之介 / Kushibiki Junnosuke</h1>
             <p className="card-text">所属：横浜国立大学大学院 環境情報学府</p>
-            <p className="card-text">サイバーセキュリティとITインフラに興味がある大学院生です</p>
+            <p className="card-text">サイバーセキュリティとITインフラの運用に興味がある大学院生です</p>
             <div className="d-flex justify-content-center social-links">
               <a href="https://twitter.com/kusshi94" className="btn btn-primary mx-2 btn-custom" target="_blank" rel="noreferrer">
                 <i className="fab fa-twitter"></i> Twitter
