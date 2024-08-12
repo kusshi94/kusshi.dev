@@ -37,14 +37,16 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Add Old Pages
+      - name: Set Redirector as Top Page
         run: |
-          mkdir ./build/old
-          cp -r ./web/* ./build/old
+          mkdir ./release ./release/old ./release/oldest
+          cp ./redirector/index.html ./release/index.html
+          mv -r ./build/* ./release/old
+          cp -r ./web/* ./release/oldest
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: './build'
+          path: './release'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
