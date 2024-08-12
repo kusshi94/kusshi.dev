@@ -41,7 +41,7 @@ jobs:
         run: |
           mkdir ./release ./release/old ./release/oldest
           cp ./redirector/index.html ./release/index.html
-          mv -r ./build/* ./release/old
+          mv ./build/* ./release/old
           cp -r ./web/* ./release/oldest
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
