@@ -27,26 +27,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "14"
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Set Redirector as Top Page
-        run: |
-          mkdir ./release ./release/old ./release/oldest
-          cp ./redirector/index.html ./release/index.html
-          mv ./build/* ./release/old
-          cp -r ./web/* ./release/oldest
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: './release'
+          path: './redirector'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
